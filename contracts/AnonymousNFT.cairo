@@ -14,7 +14,7 @@ func mint_anonymous{
     pedersen_ptr: HashBuiltin*,
     range_check_ptr
 }(commitment: felt, proof: felt*) {
-    // ZK proof verification placeholder
+    
     let (is_valid) = ZKVerifier.verify_proof(proof);
     assert is_valid = 1;
 

@@ -23,11 +23,11 @@ async function main() {
     compileContract('Marketplace')
   ]);
 
-  // Declare & Deploy NFT
+  
   const nftDeclare = await account.declare({ contract: nftContract });
   const nft = await account.deploy({ classHash: nftDeclare.class_hash });
 
-  // Declare & Deploy Marketplace
+  
   const marketDeclare = await account.declare({ contract: marketContract });
   const marketplace = await account.deploy({
     classHash: marketDeclare.class_hash,
